@@ -1,6 +1,9 @@
+import { cookies } from "next/headers";
 
-export const revalidate = 5
+
+
 export default async function Home() {
+  cookies()
   return (
       <main className="">
         <div>{Date.now()}</div>
